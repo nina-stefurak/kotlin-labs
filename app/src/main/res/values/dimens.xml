@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="intro_radius">5dp</dimen>
+    <dimen name="inner_margin">5dp</dimen>
+    <dimen name="icon_padding">10dp</dimen>
+    <dimen name="padding_medium">0</dimen>
+</resources>
