@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Lab01"
         tools:targetApi="31">
         <activity
-            android:name="pl.wsei.pam.lab06.MainActivity"
+            android:name="pl.wsei.pam.lab06.NavigationActivity"
             android:exported="false"
             android:label="@string/title_activity_main"
             android:theme="@style/Theme.Lab01" />

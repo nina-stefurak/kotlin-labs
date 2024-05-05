@@ -8,6 +8,7 @@ import android.widget.Toast
 import pl.wsei.pam.lab01.Lab01Activity
 import pl.wsei.pam.lab01.R
 import pl.wsei.pam.lab02.Lab02Activity
+import pl.wsei.pam.lab06.NavigationActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +23,12 @@ class MainActivity : AppCompatActivity() {
     fun onClickMainBtnRunLab02(v: View){
         Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show()
         val intent = Intent(this, Lab02Activity::class.java)
+        startActivity(intent)
+    }
+
+    fun onClickMainBtnRunNavigation(v: View){
+        Toast.makeText(this, "Clicked navigation butoon", Toast.LENGTH_SHORT).show()
+        val intent = Intent(this, NavigationActivity::class.java)
         startActivity(intent)
     }
 
