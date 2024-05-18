@@ -7,7 +7,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.CheckCircle
+import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.Clear
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ElevatedCard
@@ -66,7 +66,7 @@ fun ListItem(item: TodoTask, modifier: Modifier = Modifier) {
         ) {
             Spacer(modifier = Modifier.weight(1f))
             if (item.isDone) {
-                Icon(imageVector = Icons.Default.CheckCircle, contentDescription = "")
+                Icon(imageVector = Icons.Default.Check, contentDescription = "")
             } else {
                 Icon(imageVector = Icons.Default.Clear, contentDescription = "")
             }

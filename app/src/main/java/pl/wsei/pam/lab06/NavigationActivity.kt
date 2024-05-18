@@ -37,6 +37,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
@@ -57,7 +58,6 @@ class NavigationActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             Lab06Theme {
-                // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
@@ -174,7 +174,7 @@ class NavigationActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxWidth()
                 )
                 Column {
-                    Text("Priority", style = MaterialTheme.typography.titleSmall)
+                    Text("Priority", style = MaterialTheme.typography.titleMedium, modifier = Modifier.padding(16.dp))
                     Priority.entries.forEach { priority ->
                         Row(
                             verticalAlignment = Alignment.CenterVertically,
@@ -191,7 +191,7 @@ class NavigationActivity : ComponentActivity() {
                     }
                 }
                 Column {
-                    Text("Is done?", style = MaterialTheme.typography.titleSmall)
+                    Text("Is done?", style = MaterialTheme.typography.titleMedium,modifier = Modifier.padding(16.dp))
                     Checkbox(
                         checked = isDone,
                         onCheckedChange = { isDone = it }

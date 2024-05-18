@@ -10,13 +10,19 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:name="TodoApplication"
         android:theme="@style/Theme.Lab01"
         tools:targetApi="31">
         <activity
             android:name="pl.wsei.pam.lab06.NavigationActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_main"
-            android:theme="@style/Theme.Lab01" />
+            android:theme="@style/Theme.Lab01" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="pl.wsei.pam.lab04.BoardActivity"
             android:exported="false" />
